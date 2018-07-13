@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class LabApplicationTests {
 
 	@Test
-	public void contextLoads() {
+	public void testeSoma() {
 		int soma = 2+2;
 		Assert.assertTrue(5 > soma);
 	}
