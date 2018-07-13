@@ -18,12 +18,6 @@ pipeline {
             steps {
                 sh 'mvn -Dmaven.test.failure.ignore=true install' 
             }
-            post {
-                success {
-                	artifacts '**/target/*.jar', fingerprint: true
-                    junit 'target/surefire-reports/**/*.xml' 
-                }
-            }
         }
         
         stage ('Test') {
